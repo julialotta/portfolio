@@ -1,0 +1,18 @@
+// Mixins
+@import "mixins";
+@import "variables";
+
+// Style repeated elements
+@import "./elements/header";
+@import "./elements/footer";
+
+// Style separate elements
+@import "./elements/home";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: red;
+}
