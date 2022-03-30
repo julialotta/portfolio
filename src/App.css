@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200&family=Palette+Mosaic&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200&family=Palette+Mosaic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200&family=Palette+Mosaic&family=Playfair+Display:wght@600&family=Rock+3D&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200&family=Palette+Mosaic&family=Playfair+Display:wght@600&family=Rock+3D&display=swap");
 .headerContainer {
   display: flex;
   flex-direction: column;
@@ -11,8 +11,8 @@
 
 .headerContent {
   text-align: center;
-  font-family: "Palette Mosaic", cursive;
-  color: #fbf2e6;
+  font-family: "Rock 3D", cursive;
+  font-size: 30px;
   width: 80%;
   height: 100%;
 }
@@ -38,10 +38,10 @@ footer {
 
 .topContent {
   text-align: center;
-  font-family: "Palette Mosaic", cursive;
-  color: #fbf2e6;
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
   width: 80%;
-  min-height: 30vh;
+  min-height: 20vh;
 }
 
 .bottomContainer {
@@ -62,7 +62,6 @@ footer {
   gap: 0;
   text-align: center;
   font-family: "Palette Mosaic", cursive;
-  color: #e0591e;
   background-color: #fbf2e6;
   width: 80%;
   box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px 0;
@@ -73,9 +72,14 @@ footer {
   top: 0;
 }
 .bottomContent .textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
   font-family: "Outfit", sans-serif;
   width: 60%;
-  min-height: 40vh;
+  min-height: 45vh;
 }
 
 html {
@@ -102,7 +106,7 @@ body {
   width: 100%;
 }
 .topBody .topBodyContent {
-  background-color: #e0591e;
+  background-color: #f6e2c6;
   width: 80%;
   box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px 0;
   margin-top: 40px;

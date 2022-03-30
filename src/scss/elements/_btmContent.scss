@@ -7,7 +7,6 @@
   @include mixins.flex(column, center, center);
   text-align: center;
   font-family: $fun-font;
-  color: $red;
   background-color: $lightbeige;
   width: 80%;
   @include mixins.boxshadow();
@@ -18,8 +17,9 @@
     top: 0;
   }
   .textContainer {
+    @include mixins.flex(column, center, center);
     font-family: $strict-font;
     width: 60%;
-    min-height: 40vh;
+    min-height: 45vh;
   }
 }
