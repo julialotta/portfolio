@@ -1,0 +1,5 @@
+footer {
+  @include mixins.flex(column, center, center, 0);
+  font-family: $strict-font;
+  font-size: 10px;
+}

@@ -1,0 +1,11 @@
+.topContainer {
+  width: 100%;
+  @include mixins.flex(column, center, center);
+}
+.topContent {
+  text-align: center;
+  font-family: $fun-font;
+  color: $lightbeige;
+  width: 80%;
+  min-height: 30vh;
+}

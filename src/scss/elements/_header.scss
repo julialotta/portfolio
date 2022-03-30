@@ -1,0 +1,11 @@
+.headerContainer {
+  @include mixins.flex(column, center, center, 20px);
+  width: 100%;
+}
+.headerContent {
+  text-align: center;
+  font-family: $fun-font;
+  color: $lightbeige;
+  width: 80%;
+  height: 100%;
+}
