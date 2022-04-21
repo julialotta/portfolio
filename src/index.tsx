@@ -2,24 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./App.css";
 import Header from "./partials/Header";
-import TopContent from "./partials/TopContent";
-import BottomContent from "./partials/BottomContent";
+import Main from "./partials/main";
 import Footer from "./partials/Footer";
 
 ReactDOM.render(
   <React.StrictMode>
-    <div className="topBody">
-      <div className="topBodyContent">
-        <Header />
-        <TopContent />
-      </div>
-    </div>
-    <div className="btmBody">
-      <div>
-        <BottomContent />
-      </div>
-      <Footer />
-    </div>
+    <Header />
+    <Main />
+    <Footer />
   </React.StrictMode>,
   document.getElementById("root")
 );

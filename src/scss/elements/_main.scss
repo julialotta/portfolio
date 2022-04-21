@@ -1,5 +1,5 @@
-footer {
+main {
   @include mixins.flex(column, center, center, 0);
+  width: 100%;
   font-family: $futura;
-  font-size: 10px;
 }

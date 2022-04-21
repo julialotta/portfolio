@@ -4,7 +4,7 @@ import logo from "./logo.svg";
 function Footer() {
   return (
     <footer>
-      <p>This is a footer</p>
+      <p>&copy; 2022 Julia-Lotta Tinglöf</p>
     </footer>
   );
 }

@@ -1,13 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200&family=Palette+Mosaic&family=Playfair+Display:wght@600&family=Rock+3D&display=swap");
+@import url("https://use.typekit.net/elq2whh.css");
+
+@font-face {
+  font-family: "Futura Std Book";
+  src: local("Futura Std Book.ttf"),
+    url("assets/fonts/Futura\ Std\ Book.ttf") format("ttf");
+}
 
 // Fonts
-$fun-font: "Palette Mosaic", cursive;
-$strict-font: "Outfit", sans-serif;
-$artsy-font: "Rock 3D", cursive;
-$np-font: "Playfair Display", serif;
+$abril: abril-fatface, serif;
+$futura: "Futura Std Book", sans-serif;
 
 // Colors
-$red: #e0591e;
-$beige: #f6e2c6;
-$lightbeige: #fbf2e6;
-$brown: #b68d63;
+$white: #ede5d7;
+$green: #99a27b;
+$red: #9c5026;
+$orange: #bf7616;

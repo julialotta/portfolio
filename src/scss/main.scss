@@ -5,8 +5,8 @@
 // Styling elements
 @import "./elements/header";
 @import "./elements/footer";
-@import "./elements/topContent";
-@import "./elements/btmContent";
+@import "./elements/main";
+@import "./components/burgerMenu";
 
 html {
   scroll-behavior: smooth;
@@ -16,21 +16,5 @@ body {
   @include mixins.flex(column, center, center, 0px);
   padding: 0;
   margin: 0;
-}
-
-.topBody {
-  @include mixins.flex(column, center, center, 0px);
-  background-color: $lightbeige;
-  width: 100%;
-
-  .topBodyContent {
-    background-color: $beige;
-    width: 80%;
-    @include mixins.boxshadow();
-    margin-top: 40px;
-    border-radius: 5px 5px 0 0;
-  }
-}
-.btmBody {
-  background-color: $beige;
+  background-color: $white;
 }

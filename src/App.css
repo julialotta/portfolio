@@ -1,20 +1,66 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200&family=Palette+Mosaic&family=Playfair+Display:wght@600&family=Rock+3D&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200&family=Palette+Mosaic&family=Playfair+Display:wght@600&family=Rock+3D&display=swap");
+@import url("https://use.typekit.net/elq2whh.css");
+@import url("https://use.typekit.net/elq2whh.css");
+@font-face {
+  font-family: "Futura Std Book";
+  src: local("Futura Std Book.ttf"), url("assets/fonts/Futura Std Book.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Futura Std Book";
+  src: local("Futura Std Book.ttf"), url("assets/fonts/Futura Std Book.ttf") format("ttf");
+}
 .headerContainer {
+  width: 100%;
+  font-family: abril-fatface, serif;
+  margin: 0 20px;
+}
+.headerContainer .topMenu {
+  width: 100%;
+  margin-top: 25px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   gap: 20px;
-  width: 100%;
 }
-
-.headerContent {
-  text-align: center;
-  font-family: "Rock 3D", cursive;
-  font-size: 30px;
-  width: 80%;
-  height: 100%;
+.headerContainer .topMenu .logo {
+  display: none;
+}
+@media (min-width: 650px) {
+  .headerContainer .topMenu .logo {
+    display: flex;
+    width: 200px;
+  }
+}
+.headerContainer .topMenu .smalllogo {
+  display: flex;
+  width: 100px;
+}
+@media (min-width: 650px) {
+  .headerContainer .topMenu .smalllogo {
+    display: none;
+  }
+}
+.headerContainer .hero {
+  margin: 10px 10px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  font-size: 20pt;
+}
+@media (min-width: 650px) {
+  .headerContainer .hero {
+    margin: 10px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+}
+.headerContainer .hero img {
+  width: 250px;
 }
 
 footer {
@@ -23,63 +69,37 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 0;
-  font-family: "Outfit", sans-serif;
+  font-family: "Futura Std Book", sans-serif;
   font-size: 10px;
 }
 
-.topContainer {
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 0;
+  font-family: "Futura Std Book", sans-serif;
 }
 
-.topContent {
-  text-align: center;
-  font-family: "Outfit", sans-serif;
-  font-size: 15px;
-  width: 80%;
-  min-height: 20vh;
-}
-
-.bottomContainer {
-  width: 100%;
+.menu {
+  list-style: none;
+  color: #9c5026;
+  font-family: "Futura Std Book", sans-serif;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 0;
-  margin-bottom: 0;
 }
-
-.bottomContent {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 0;
-  text-align: center;
-  font-family: "Palette Mosaic", cursive;
-  background-color: #fbf2e6;
-  width: 80%;
-  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px 0;
-  border-radius: 0 0 5px 5px;
+.menu a {
+  color: #9c5026;
+  padding: 10px 10px;
+  text-decoration: none;
 }
-.bottomContent img {
-  width: 60%;
-  top: 0;
-}
-.bottomContent .textContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 0;
-  font-family: "Outfit", sans-serif;
-  width: 60%;
-  min-height: 45vh;
+.menu a:hover {
+  color: #bf7616;
 }
 
 html {
@@ -94,27 +114,7 @@ body {
   gap: 0px;
   padding: 0;
   margin: 0;
-}
-
-.topBody {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 0px;
-  background-color: #fbf2e6;
-  width: 100%;
-}
-.topBody .topBodyContent {
-  background-color: #f6e2c6;
-  width: 80%;
-  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px 0;
-  margin-top: 40px;
-  border-radius: 5px 5px 0 0;
-}
-
-.btmBody {
-  background-color: #f6e2c6;
+  background-color: #ede5d7;
 }
 
 /*# sourceMappingURL=App.css.map */
