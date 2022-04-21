@@ -3,3 +3,11 @@ main {
   width: 100%;
   font-family: $futura;
 }
+
+.pattern {
+  background-image: url("assets/pattern.png");
+  background-color: $white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+}

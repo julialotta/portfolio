@@ -83,6 +83,14 @@ main {
   font-family: "Futura Std Book", sans-serif;
 }
 
+.pattern {
+  background-image: url("assets/pattern.png");
+  background-color: #ede5d7;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+}
+
 .menu {
   list-style: none;
   color: #9c5026;
