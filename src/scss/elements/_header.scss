@@ -4,15 +4,15 @@
   margin: 0 20px;
 
   .topMenu {
+    @include mixins.flex(row, space-around, center);
     width: 100%;
     margin-top: 25px;
 
-    @include mixins.flex(row, space-between, center, 20px);
     .logo {
       display: none;
       @include mixins.for-phone-landscape-up {
         display: flex;
-        width: 200px;
+        width: 240px;
       }
     }
     .smalllogo {
