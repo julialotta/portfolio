@@ -1,5 +1,7 @@
 footer {
+  @include mixins.pattern(50vh);
   @include mixins.flex(column, center, center, 0);
   font-family: $futura;
-  font-size: 10px;
+  font-size: 15px;
+  bottom: 0;
 }

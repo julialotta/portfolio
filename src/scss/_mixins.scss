@@ -35,22 +35,36 @@
   gap: $gap;
 }
 
+////////////
+//BOXSHADOW//
+//////////
 @mixin boxshadow($x: 0, $y: 5px, $blur: 15px, $radius: 0) {
   box-shadow: rgba(0, 0, 0, 0.35) $x $y $blur $radius;
 }
 
-///////////
-//BUTTON//
-/////////
-@mixin btn($width, $radius: 20, $height: 35) {
-  font-family: $strict-font;
-  background-color: $red;
-  color: white;
-  border-radius: $radius;
-  width: $width;
+////////////
+//BACKGROUND//
+//////////
+@mixin pattern($height) {
+  display: flex;
+  background-image: url(assets/pattern.png);
+  background-size: cover;
+  background-color: $white;
+  width: 100%;
   height: $height;
-  text-align: center;
-  text-decoration: none;
-  border: none;
-  cursor: pointer;
+  z-index: 0;
+}
+@mixin green($height) {
+  display: flex;
+  background-color: $green;
+  width: 100%;
+  height: $height;
+  z-index: 0;
+}
+@mixin red($height) {
+  display: flex;
+  background-color: $red;
+  width: 100%;
+  height: $height;
+  z-index: 0;
 }

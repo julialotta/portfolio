@@ -4,28 +4,74 @@ main {
   font-family: $futura;
 }
 
-.pattern {
-  position: relative;
-  background-image: url(assets/pattern.png);
+.categoryContainerOm {
+  padding-bottom: 80px;
+  h3 {
+    padding: 0;
+    margin: 30px 0 0 0;
+  }
+  @include mixins.flex(column, center, center, 0px);
+  z-index: 1;
+  font-family: $abril;
+  letter-spacing: 2px;
+  font-size: 40pt;
   background-color: $white;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 50vh;
-  z-index: 0;
-}
-.green {
+  width: 75%;
   position: absolute;
-  background-color: $green;
-  width: 100%;
-  height: 50vh;
-  z-index: 0;
+  top: 97vh;
+  p {
+    font-family: $futura;
+    font-size: 25pt;
+    text-align: center;
+    line-height: 45px;
+    padding: 0 10px;
+  }
+  .images {
+    @include mixins.flex(column, center, center, 45px);
+    @include mixins.for-phone-landscape-up {
+      @include mixins.flex(row, center, center, 25px);
+    }
+    :nth-child(1) {
+      width: 250px;
+    }
+    :nth-child(2) {
+      width: 300px;
+    }
+  }
 }
-.categoryContainer {
+
+.categoryContainerProjekt {
+  h3 {
+    font-family: $abril;
+    padding: 0;
+    margin: 30px 0 0 0;
+    font-family: $abril;
+    letter-spacing: 2px;
+    font-size: 40pt;
+  }
   z-index: 1;
   font-family: $futura;
+  text-align: center;
+  font-size: 30pt;
   background-color: $white;
+  width: 75%;
+  position: absolute;
+  top: 300vh;
   img {
-    width: 200px;
+    width: 160px;
+    padding: 20px;
   }
+}
+
+.pattern {
+  @include mixins.pattern(100vh);
+}
+
+.green {
+  @include mixins.green(100vh);
+  top: 160vh;
+}
+.red {
+  @include mixins.red(180vh);
+  top: 320vh;
 }

@@ -1,26 +1,20 @@
 @import url("https://use.typekit.net/elq2whh.css");
 @import url("https://use.typekit.net/elq2whh.css");
-@font-face {
-  font-family: "Futura Std Book";
-  src: local("Futura Std Book.ttf"), url("assets/fonts/Futura Std Book.ttf") format("ttf");
-}
-@font-face {
-  font-family: "Futura Std Book";
-  src: local("Futura Std Book.ttf"), url("assets/fonts/Futura Std Book.ttf") format("ttf");
-}
 .headerContainer {
-  width: 100%;
   font-family: abril-fatface, serif;
-  margin: 0 20px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 2px;
+  margin: 0 45px;
 }
 .headerContainer .topMenu {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   gap: 0;
   width: 100%;
-  margin-top: 25px;
+  margin-top: 30px;
 }
 .headerContainer .topMenu .logo {
   display: none;
@@ -41,13 +35,13 @@
   }
 }
 .headerContainer .hero {
-  margin: 10px 10px;
+  margin: 20px 10px;
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
   gap: 0;
-  font-size: 20pt;
+  font-size: 28pt;
 }
 @media (min-width: 650px) {
   .headerContainer .hero {
@@ -60,17 +54,25 @@
   }
 }
 .headerContainer .hero img {
-  width: 250px;
+  width: 270px;
 }
 
 footer {
+  display: flex;
+  background-image: url(assets/pattern.png);
+  background-size: cover;
+  background-color: #ede5d7;
+  width: 100%;
+  height: 50vh;
+  z-index: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 0;
-  font-family: "Futura Std Book", sans-serif;
-  font-size: 10px;
+  font-family: futura-pt, sans-serif;
+  font-size: 15px;
+  bottom: 0;
 }
 
 main {
@@ -80,54 +82,160 @@ main {
   align-items: center;
   gap: 0;
   width: 100%;
-  font-family: "Futura Std Book", sans-serif;
+  font-family: futura-pt, sans-serif;
+}
+
+.categoryContainerOm {
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  z-index: 1;
+  font-family: abril-fatface, serif;
+  letter-spacing: 2px;
+  font-size: 40pt;
+  background-color: #ede5d7;
+  width: 75%;
+  position: absolute;
+  top: 97vh;
+}
+.categoryContainerOm h3 {
+  padding: 0;
+  margin: 30px 0 0 0;
+}
+.categoryContainerOm p {
+  font-family: futura-pt, sans-serif;
+  font-size: 25pt;
+  text-align: center;
+  line-height: 45px;
+  padding: 0 10px;
+}
+.categoryContainerOm .images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+}
+@media (min-width: 650px) {
+  .categoryContainerOm .images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+}
+.categoryContainerOm .images :nth-child(1) {
+  width: 250px;
+}
+.categoryContainerOm .images :nth-child(2) {
+  width: 300px;
+}
+
+.categoryContainerProjekt {
+  z-index: 1;
+  font-family: futura-pt, sans-serif;
+  text-align: center;
+  font-size: 30pt;
+  background-color: #ede5d7;
+  width: 75%;
+  position: absolute;
+  top: 300vh;
+}
+.categoryContainerProjekt h3 {
+  font-family: abril-fatface, serif;
+  padding: 0;
+  margin: 30px 0 0 0;
+  font-family: abril-fatface, serif;
+  letter-spacing: 2px;
+  font-size: 40pt;
+}
+.categoryContainerProjekt img {
+  width: 160px;
+  padding: 20px;
 }
 
 .pattern {
-  position: relative;
+  display: flex;
   background-image: url(assets/pattern.png);
-  background-color: #ede5d7;
-  background-repeat: no-repeat;
   background-size: cover;
+  background-color: #ede5d7;
   width: 100%;
-  height: 50vh;
+  height: 100vh;
   z-index: 0;
 }
 
 .green {
-  position: absolute;
+  display: flex;
   background-color: #99a27b;
   width: 100%;
-  height: 50vh;
+  height: 100vh;
   z-index: 0;
+  top: 160vh;
 }
 
-.categoryContainer {
-  z-index: 1;
-  font-family: "Futura Std Book", sans-serif;
-  background-color: #ede5d7;
-}
-.categoryContainer img {
-  width: 200px;
+.red {
+  display: flex;
+  background-color: #9c5026;
+  width: 100%;
+  height: 180vh;
+  z-index: 0;
+  top: 320vh;
 }
 
 .menu {
-  list-style: none;
-  color: #9c5026;
-  font-family: "Futura Std Book", sans-serif;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 0;
+  display: none;
 }
-.menu a {
-  color: #9c5026;
-  padding: 10px 10px;
-  text-decoration: none;
+@media (min-width: 650px) {
+  .menu {
+    display: flex;
+    list-style: none;
+    color: #9c5026;
+    font-family: futura-pt, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+  .menu a {
+    color: #9c5026;
+    padding: 10px 10px;
+    text-decoration: none;
+  }
+  .menu a:hover {
+    color: #bf7616;
+  }
 }
-.menu a:hover {
-  color: #bf7616;
+
+.burgerMenu,
+.burgerMenu::before,
+.burgerMenu::after {
+  display: block;
+  background-color: #9c5026;
+  height: 3px;
+  width: 75px;
+  margin-top: -50px;
+}
+@media (min-width: 650px) {
+  .burgerMenu,
+.burgerMenu::before,
+.burgerMenu::after {
+    display: none;
+  }
+}
+
+.burgerMenu::before {
+  content: "";
+  margin-top: 13px;
+}
+
+.burgerMenu::after {
+  content: "";
+  margin-top: 11px;
 }
 
 html {

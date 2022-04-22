@@ -1,15 +1,41 @@
 .menu {
-  list-style: none;
-  color: $red;
-  font-family: $futura;
-  @include mixins.flex(row, center, center);
-
-  a {
+  display: none;
+  @include mixins.for-phone-landscape-up {
+    display: flex;
+    list-style: none;
     color: $red;
-    padding: 10px 10px;
-    text-decoration: none;
+    font-family: $futura;
+    @include mixins.flex(row, center, center);
+
+    a {
+      color: $red;
+      padding: 10px 10px;
+      text-decoration: none;
+    }
+    a:hover {
+      color: $orange;
+    }
   }
-  a:hover {
-    color: $orange;
+}
+
+.burgerMenu,
+.burgerMenu::before,
+.burgerMenu::after {
+  display: block;
+  background-color: $red;
+  height: 3px;
+  width: 75px;
+  margin-top: -50px;
+  @include mixins.for-phone-landscape-up {
+    display: none;
   }
+}
+.burgerMenu::before {
+  content: "";
+  margin-top: 13px;
+}
+
+.burgerMenu::after {
+  content: "";
+  margin-top: 11px;
 }

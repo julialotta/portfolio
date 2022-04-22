@@ -1,14 +1,8 @@
 @import url("https://use.typekit.net/elq2whh.css");
 
-@font-face {
-  font-family: "Futura Std Book";
-  src: local("Futura Std Book.ttf"),
-    url("assets/fonts/Futura\ Std\ Book.ttf") format("ttf");
-}
-
 // Fonts
 $abril: abril-fatface, serif;
-$futura: "Futura Std Book", sans-serif;
+$futura: futura-pt, sans-serif;
 
 // Colors
 $white: #ede5d7;
