@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.c5368c8d.css",
-    "main.js": "/portfolio/static/js/main.15efdb09.js",
-    "static/media/JL01.png": "/portfolio/static/media/JL01.35eef555d897e46b328c.png",
-    "static/media/pattern.png": "/portfolio/static/media/pattern.0ddfe23691784e3b64a8.png",
-    "static/media/logo.png": "/portfolio/static/media/logo.38f5681366e55d1e0bee.png",
-    "static/media/Futura Std Book.ttf": "/portfolio/static/media/Futura Std Book.2a4d2daaa920bc9e8f4b.ttf",
-    "index.html": "/portfolio/index.html",
-    "main.c5368c8d.css.map": "/portfolio/static/css/main.c5368c8d.css.map",
-    "main.15efdb09.js.map": "/portfolio/static/js/main.15efdb09.js.map"
+    "main.css": "/static/css/main.020bae18.css",
+    "main.js": "/static/js/main.abba5271.js",
+    "static/media/JL01.png": "/static/media/JL01.35eef555d897e46b328c.png",
+    "static/media/pattern.png": "/static/media/pattern.0ddfe23691784e3b64a8.png",
+    "static/media/logo.png": "/static/media/logo.38f5681366e55d1e0bee.png",
+    "static/media/Futura Std Book.ttf": "/static/media/Futura Std Book.2a4d2daaa920bc9e8f4b.ttf",
+    "index.html": "/index.html",
+    "main.020bae18.css.map": "/static/css/main.020bae18.css.map",
+    "main.abba5271.js.map": "/static/js/main.abba5271.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5368c8d.css",
-    "static/js/main.15efdb09.js"
+    "static/css/main.020bae18.css",
+    "static/js/main.abba5271.js"
   ]
 }
