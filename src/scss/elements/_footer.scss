@@ -1,15 +1,19 @@
 footer {
-  @include mixins.pattern(50vh);
+  @include mixins.pattern(80vh);
   @include mixins.flex(column, center, center, 0);
   div {
     @include mixins.flex(column, center, center, 0);
     background-color: $white;
-    height: 30vh;
+    height: 60vh;
     width: 75%;
   }
   .icons {
     font-size: 40px;
     @include mixins.flex(row, center, center, 20px);
+    :hover {
+      color: $red;
+      cursor: pointer;
+    }
   }
   h3 {
     font-family: $abril;
@@ -17,9 +21,23 @@ footer {
     font-size: 40pt;
     margin: 15px 0;
   }
+
   p {
     font-family: $futura;
     font-size: 10px;
     bottom: 0;
+  }
+  .form {
+    @include mixins.flex(column, center, center, 5px);
+    margin: 20px;
+    input,
+    textarea {
+      background-color: $white;
+      border: $red 2px solid;
+      border-radius: 5px;
+    }
+    label {
+      font-family: $futura;
+    }
   }
 }

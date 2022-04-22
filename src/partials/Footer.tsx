@@ -9,6 +9,14 @@ function Footer() {
     <footer>
       <div>
         <h3>Kontakt</h3>
+        <form className="form" action="">
+          <label htmlFor="name">Namn</label>
+          <input id="name" type="text" />
+          <label htmlFor="email">Email</label>
+          <input id="email" type="text" />
+          <label htmlFor="message">Meddelande</label>
+          <textarea name="message" id="message"></textarea>
+        </form>
         <div className="icons">
           <BsInstagram />
           <BsLinkedin />

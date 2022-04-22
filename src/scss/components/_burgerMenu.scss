@@ -5,6 +5,7 @@
     list-style: none;
     color: $red;
     font-family: $futura;
+    font-size: 20pt;
     @include mixins.flex(row, center, center);
 
     a {

@@ -1,10 +1,8 @@
 .headerContainer {
   font-family: $abril;
   font-weight: 400;
-
   font-style: normal;
   letter-spacing: 2px;
-
   margin: 0 45px;
 
   .topMenu {
@@ -31,7 +29,7 @@
   .hero {
     margin: 20px 10px;
     @include mixins.flex(column-reverse, center, center, 0);
-    font-size: 28pt;
+    font-size: 27pt;
     @include mixins.for-phone-landscape-up {
       margin: 10px 30px;
       @include mixins.flex(row, center, center, 0);

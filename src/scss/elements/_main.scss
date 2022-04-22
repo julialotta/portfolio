@@ -16,9 +16,13 @@ main {
   letter-spacing: 2px;
   font-size: 40pt;
   background-color: $white;
-  width: 75%;
+  width: 80%;
   position: absolute;
   top: 97vh;
+  @include mixins.for-phone-landscape-up {
+    top: 67vh;
+  }
+
   p {
     font-family: $futura;
     font-size: 25pt;
@@ -32,10 +36,10 @@ main {
       @include mixins.flex(row, center, center, 25px);
     }
     :nth-child(1) {
-      width: 250px;
+      width: 220px;
     }
     :nth-child(2) {
-      width: 300px;
+      width: 280px;
     }
   }
 }
@@ -52,26 +56,55 @@ main {
   z-index: 1;
   font-family: $futura;
   text-align: center;
-  font-size: 30pt;
+  font-size: 27pt;
   background-color: $white;
-  width: 75%;
+  width: 80%;
   position: absolute;
   top: 300vh;
+  @include mixins.for-phone-landscape-up {
+    top: 210vh;
+  }
+
   img {
     width: 160px;
     padding: 20px;
+    @include mixins.for-phone-landscape-up {
+      padding: 5px;
+    }
+    @include mixins.for-desktop-up {
+      width: 200px;
+      padding: 15px;
+    }
   }
 }
 
 .pattern {
   @include mixins.pattern(100vh);
+  @include mixins.for-phone-landscape-up {
+    @include mixins.pattern(70vh);
+  }
+  @include mixins.for-desktop-up {
+    @include mixins.pattern(80vh);
+  }
 }
 
 .green {
-  @include mixins.green(100vh);
+  @include mixins.green(105vh);
   top: 160vh;
+  @include mixins.for-phone-landscape-up {
+    @include mixins.green(60vh);
+    @include mixins.for-desktop-up {
+      @include mixins.green(50vh);
+    }
+  }
 }
 .red {
-  @include mixins.red(180vh);
+  @include mixins.red(170vh);
   top: 320vh;
+  @include mixins.for-phone-landscape-up {
+    @include mixins.red(110vh);
+  }
+  @include mixins.for-desktop-up {
+    @include mixins.red(120vh);
+  }
 }

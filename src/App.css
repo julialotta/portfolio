@@ -41,7 +41,7 @@
   justify-content: center;
   align-items: center;
   gap: 0;
-  font-size: 28pt;
+  font-size: 27pt;
 }
 @media (min-width: 650px) {
   .headerContainer .hero {
@@ -63,7 +63,7 @@ footer {
   background-size: cover;
   background-color: #ede5d7;
   width: 100%;
-  height: 50vh;
+  height: 80vh;
   z-index: 0;
   display: flex;
   flex-direction: column;
@@ -78,7 +78,7 @@ footer div {
   align-items: center;
   gap: 0;
   background-color: #ede5d7;
-  height: 30vh;
+  height: 60vh;
   width: 75%;
 }
 footer .icons {
@@ -88,6 +88,10 @@ footer .icons {
   justify-content: center;
   align-items: center;
   gap: 20px;
+}
+footer .icons :hover {
+  color: #9c5026;
+  cursor: pointer;
 }
 footer h3 {
   font-family: abril-fatface, serif;
@@ -99,6 +103,23 @@ footer p {
   font-family: futura-pt, sans-serif;
   font-size: 10px;
   bottom: 0;
+}
+footer .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin: 20px;
+}
+footer .form input,
+footer .form textarea {
+  background-color: #ede5d7;
+  border: #9c5026 2px solid;
+  border-radius: 5px;
+}
+footer .form label {
+  font-family: futura-pt, sans-serif;
 }
 
 main {
@@ -123,13 +144,18 @@ main {
   letter-spacing: 2px;
   font-size: 40pt;
   background-color: #ede5d7;
-  width: 75%;
+  width: 80%;
   position: absolute;
   top: 97vh;
 }
 .categoryContainerOm h3 {
   padding: 0;
   margin: 30px 0 0 0;
+}
+@media (min-width: 650px) {
+  .categoryContainerOm {
+    top: 67vh;
+  }
 }
 .categoryContainerOm p {
   font-family: futura-pt, sans-serif;
@@ -155,19 +181,19 @@ main {
   }
 }
 .categoryContainerOm .images :nth-child(1) {
-  width: 250px;
+  width: 220px;
 }
 .categoryContainerOm .images :nth-child(2) {
-  width: 300px;
+  width: 280px;
 }
 
 .categoryContainerProjekt {
   z-index: 1;
   font-family: futura-pt, sans-serif;
   text-align: center;
-  font-size: 30pt;
+  font-size: 27pt;
   background-color: #ede5d7;
-  width: 75%;
+  width: 80%;
   position: absolute;
   top: 300vh;
 }
@@ -179,9 +205,25 @@ main {
   letter-spacing: 2px;
   font-size: 40pt;
 }
+@media (min-width: 650px) {
+  .categoryContainerProjekt {
+    top: 210vh;
+  }
+}
 .categoryContainerProjekt img {
   width: 160px;
   padding: 20px;
+}
+@media (min-width: 650px) {
+  .categoryContainerProjekt img {
+    padding: 5px;
+  }
+}
+@media (min-width: 992px) {
+  .categoryContainerProjekt img {
+    width: 200px;
+    padding: 15px;
+  }
 }
 
 .pattern {
@@ -193,23 +235,81 @@ main {
   height: 100vh;
   z-index: 0;
 }
+@media (min-width: 650px) {
+  .pattern {
+    display: flex;
+    background-image: url(assets/pattern.png);
+    background-size: cover;
+    background-color: #ede5d7;
+    width: 100%;
+    height: 70vh;
+    z-index: 0;
+  }
+}
+@media (min-width: 992px) {
+  .pattern {
+    display: flex;
+    background-image: url(assets/pattern.png);
+    background-size: cover;
+    background-color: #ede5d7;
+    width: 100%;
+    height: 80vh;
+    z-index: 0;
+  }
+}
 
 .green {
   display: flex;
   background-color: #99a27b;
   width: 100%;
-  height: 100vh;
+  height: 105vh;
   z-index: 0;
   top: 160vh;
+}
+@media (min-width: 650px) {
+  .green {
+    display: flex;
+    background-color: #99a27b;
+    width: 100%;
+    height: 60vh;
+    z-index: 0;
+  }
+}
+@media (min-width: 650px) and (min-width: 992px) {
+  .green {
+    display: flex;
+    background-color: #99a27b;
+    width: 100%;
+    height: 50vh;
+    z-index: 0;
+  }
 }
 
 .red {
   display: flex;
   background-color: #9c5026;
   width: 100%;
-  height: 180vh;
+  height: 170vh;
   z-index: 0;
   top: 320vh;
+}
+@media (min-width: 650px) {
+  .red {
+    display: flex;
+    background-color: #9c5026;
+    width: 100%;
+    height: 110vh;
+    z-index: 0;
+  }
+}
+@media (min-width: 992px) {
+  .red {
+    display: flex;
+    background-color: #9c5026;
+    width: 100%;
+    height: 120vh;
+    z-index: 0;
+  }
 }
 
 .menu {
@@ -221,6 +321,7 @@ main {
     list-style: none;
     color: #9c5026;
     font-family: futura-pt, sans-serif;
+    font-size: 20pt;
     display: flex;
     flex-direction: row;
     justify-content: center;
