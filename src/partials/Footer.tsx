@@ -7,14 +7,17 @@ import { AiOutlineMail } from "react-icons/ai";
 function Footer() {
   return (
     <footer>
-      <div className="icons">
-        <BsInstagram />
-        <BsLinkedin />
-        <AiOutlineMail />
-        <BsGithub />
-        <FaAppStoreIos />
+      <div>
+        <h3>Kontakt</h3>
+        <div className="icons">
+          <BsInstagram />
+          <BsLinkedin />
+          <AiOutlineMail />
+          <BsGithub />
+          <FaAppStoreIos />
+        </div>
+        <p>&copy; 2022 Julia-Lotta Tinglöf</p>
       </div>
-      <p>&copy; 2022 Julia-Lotta Tinglöf</p>
     </footer>
   );
 }

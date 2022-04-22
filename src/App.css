@@ -70,8 +70,34 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 0;
+}
+footer div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  background-color: #ede5d7;
+  height: 30vh;
+  width: 75%;
+}
+footer .icons {
+  font-size: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+footer h3 {
+  font-family: abril-fatface, serif;
+  letter-spacing: 2px;
+  font-size: 40pt;
+  margin: 15px 0;
+}
+footer p {
   font-family: futura-pt, sans-serif;
-  font-size: 15px;
+  font-size: 10px;
   bottom: 0;
 }
 
