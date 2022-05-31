@@ -27,13 +27,14 @@
   .hero {
     margin: 10px 10px;
     @include mixins.flex(column-reverse, center, center, 0);
-    font-size: 20pt;
+    font-size: 35pt;
     @include mixins.for-phone-landscape-up {
       margin: 10px 30px;
       @include mixins.flex(row, center, center, 0);
     }
     img {
-      width: 250px;
+      width: 270px;
+      margin: 0 0 40px 30px;
     }
   }
 }

@@ -1,5 +1,38 @@
 footer {
+  @include mixins.pattern(60vh);
   @include mixins.flex(column, center, center, 0);
-  font-family: $futura;
-  font-size: 10px;
+  div {
+    @include mixins.flex(column, center, center, 0);
+    background-color: $white;
+    height: 20vh;
+    width: 75%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .icons {
+    font-size: 40px;
+    @include mixins.flex(row, center, center, 30px);
+    a {
+      color: black;
+
+      :hover {
+        color: $red;
+        cursor: pointer;
+      }
+    }
+  }
+  h3 {
+    padding-top: 30px;
+    font-family: $abril;
+    letter-spacing: 2px;
+    font-size: 40pt;
+    margin: 0;
+  }
+
+  p {
+    padding-bottom: 30px;
+    font-family: $futura;
+    font-size: 10px;
+    bottom: 0;
+  }
 }

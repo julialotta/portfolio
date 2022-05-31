@@ -7,12 +7,26 @@ import { AiOutlineMail } from "react-icons/ai";
 function Footer() {
   return (
     <footer>
-      <div className="icons">
-        <BsInstagram />
-        <BsLinkedin />
-        <AiOutlineMail />
-        <BsGithub />
-        <FaAppStoreIos />
+      <div>
+        <h3>Contact</h3>
+        <div className='icons'>
+          <a href='https://www.instagram.com/julialotta/' target='_blank'>
+            <BsInstagram />
+          </a>
+          <a
+            href='https://www.linkedin.com/in/julialottatinglof/'
+            target='_blank'
+          >
+            <BsLinkedin />
+          </a>
+          <a href='mailto:julialottatinglof@gmail.com' target='_blank'>
+            <AiOutlineMail />
+          </a>
+          <a href='https://github.com/julialotta' target='_blank'>
+            <BsGithub />
+          </a>
+        </div>
+        <p>&copy; 2022 Julia-Lotta Tinglöf</p>
       </div>
       <p>&copy; 2022 Julia-Lotta Tinglöf</p>
     </footer>
