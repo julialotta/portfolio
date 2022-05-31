@@ -1,7 +1,4 @@
-import React from "react";
-import logo from "./logo.svg";
-import { BsInstagram, BsLinkedin, BsGithub } from "react-icons/bs";
-import { FaAppStoreIos } from "react-icons/fa";
+import { BsInstagram, BsLinkedin, BsGithub, BsSpotify } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 
 function Footer() {
@@ -25,10 +22,15 @@ function Footer() {
           <a href='https://github.com/julialotta' target='_blank'>
             <BsGithub />
           </a>
+          <a
+            href='https://open.spotify.com/artist/0DUdFRHNgttxt3gqOEW1ak?si=aPsJhNN0Qea61PFLSgfHVQ'
+            target='_blank'
+          >
+            <BsSpotify />
+          </a>
         </div>
         <p>&copy; 2022 Julia-Lotta Tinglöf</p>
       </div>
-      <p>&copy; 2022 Julia-Lotta Tinglöf</p>
     </footer>
   );
 }
