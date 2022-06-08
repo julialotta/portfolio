@@ -7,61 +7,35 @@ main {
   .title {
     font-family: $abril;
     font-size: 46px;
+    text-align: center;
   }
 }
 
-.homeContainer {
-  @include mixins.flex(column, center, center, 0);
-  background-color: $green;
-  margin: 30px 10px;
-  width: 100%;
-}
-.projectPageContainer {
-  @include mixins.flex(column, start, center, 0);
-  background-color: $orange;
-  width: 100%;
-  margin: 20px;
-
-  .projectsContainer {
-    @include mixins.flex(row, center, center, 0);
-    background-color: $orange;
-    width: 100%;
-    margin: 20px;
-    .singleProjectContainer {
-      @include mixins.flex(column, start, center, 0);
-      img {
-        width: 250px;
-      }
-    }
-  }
-}
-
-.aboutContainer {
-  @include mixins.flex(column, center, center, 0);
-  background-color: $red;
-  height: 100%;
-  width: 100%;
-  margin-top: 20px;
+.imgContainer {
+  @include mixins.flex(row, center, center, 0);
+  margin: 35px 0;
   img {
     width: 300px;
   }
-  .imgContainer {
-    @include mixins.flex(row, center, center, 0);
-    div {
-      @include mixins.flex(column, center, center, 0);
-      font-family: $abril;
-    }
-    a {
-      text-decoration: none;
-      color: black;
-    }
-    a:hover {
-      color: $orange;
-    }
+  div {
+    @include mixins.flex(column, center, center, 0);
+    font-family: $abril;
   }
-  .textContainer {
-    width: 80%;
-    margin: 20px;
-    text-align: center;
+  a {
+    text-decoration: none;
+    color: black;
   }
+  a:hover {
+    color: $orange;
+  }
+}
+
+.notFound {
+  background-color: $red;
+  width: 100%;
+  text-align: center;
+  font-family: $futura;
+  font-size: 30px;
+
+  margin: 20px 0;
 }

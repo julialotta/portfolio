@@ -1,6 +1,6 @@
 footer {
   @include mixins.flex(column, center, center, 0);
-  background-image: url(../../assets//pattern.png);
+
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;

@@ -1,11 +1,9 @@
 .headerContainer {
   width: 100%;
-
-  margin: 0 10px;
+  margin: 30px 10px;
   @include mixins.flex(row, space-between, center);
 
   .logoContainer {
-    margin-top: 25px;
     margin-left: 40px;
 
     .logo {
@@ -23,21 +21,50 @@
       }
     }
   }
-  ul {
+  nav {
     display: flex;
     list-style: none;
-    margin-right: 40px;
-    margin-top: 25px;
-    li,
-    a {
-      text-decoration: none;
-      margin: 5px;
-      color: $red;
+    margin-right: 35px;
+
+    .menuItem {
       font-family: $futura;
-      font-size: 20px;
+      color: $red;
+      margin: 5px;
+      font-size: 22px;
+      text-decoration: none;
+      display: inline-block;
+      padding: 5px 15px;
+      position: relative;
+      //text-transform: lowercase;
     }
-    a:hover {
-      color: $orange;
+
+    .menuItem:after {
+      background: none repeat scroll 0 0 transparent;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 0.5px;
+      left: 50%;
+      position: absolute;
+      background: $red;
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0;
+    }
+    .menuItem:hover:after {
+      width: 100%;
+      left: 0;
+    }
+
+    .active:after {
+      background: none repeat scroll 0 0 transparent;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 0.5px;
+      left: 0;
+      position: absolute;
+      background: $red;
+      width: 100%;
     }
   }
 }

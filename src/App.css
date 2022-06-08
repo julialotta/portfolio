@@ -1,60 +1,76 @@
 @import url("https://use.typekit.net/elq2whh.css");
 @import url("https://use.typekit.net/elq2whh.css");
-
 .headerContainer {
   width: 100%;
-  font-family: abril-fatface, serif;
-  margin: 0 20px;
-}
-.headerContainer .topMenu {
+  margin: 30px 10px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   gap: 0;
-  width: 100%;
-  margin-top: 25px;
 }
-.headerContainer .topMenu .logo {
+.headerContainer .logoContainer {
+  margin-left: 40px;
+}
+.headerContainer .logoContainer .logo {
   display: none;
 }
 @media (min-width: 650px) {
-  .headerContainer .topMenu .logo {
+  .headerContainer .logoContainer .logo {
     display: flex;
     width: 240px;
   }
 }
-.headerContainer .topMenu .smalllogo {
+.headerContainer .logoContainer .smalllogo {
   display: flex;
   width: 100px;
 }
 @media (min-width: 650px) {
-  .headerContainer .topMenu .smalllogo {
+  .headerContainer .logoContainer .smalllogo {
     display: none;
   }
 }
-.headerContainer .hero {
-  margin: 10px 10px;
+.headerContainer nav {
   display: flex;
-  flex-direction: column-reverse;
-  justify-content: center;
-  align-items: center;
-  gap: 0;
-  font-size: 35pt;
+  list-style: none;
+  margin-right: 35px;
 }
-@media (min-width: 650px) {
-  .headerContainer .hero {
-    margin: 10px 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 0;
-  }
+.headerContainer nav .menuItem {
+  font-family: futura-pt, sans-serif;
+  color: #9c5026;
+  margin: 5px;
+  font-size: 22px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 15px;
+  position: relative;
 }
-.headerContainer .hero img {
-  width: 270px;
-  margin: 0 0 40px 30px;
+.headerContainer nav .menuItem:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 0.5px;
+  left: 50%;
+  position: absolute;
+  background: #9c5026;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.headerContainer nav .menuItem:hover:after {
+  width: 100%;
+  left: 0;
+}
+.headerContainer nav .active:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 0.5px;
+  left: 0;
+  position: absolute;
+  background: #9c5026;
+  width: 100%;
 }
 
 footer {
@@ -63,6 +79,10 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 35vh;
 }
 footer div {
   display: flex;
@@ -71,7 +91,7 @@ footer div {
   align-items: center;
   gap: 0;
   background-color: #ede5d7;
-  height: 20vh;
+  height: 60%;
   width: 75%;
   padding-top: 30px;
   padding-bottom: 20px;
@@ -95,14 +115,112 @@ footer h3 {
   padding-top: 30px;
   font-family: abril-fatface, serif;
   letter-spacing: 2px;
-  font-size: 40pt;
+  font-size: 30pt;
   margin: 0;
 }
 footer p {
   padding-bottom: 30px;
-  font-family: "Futura Std Book", sans-serif;
+  font-family: futura-pt, sans-serif;
   font-size: 10px;
   bottom: 0;
+}
+
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  background-color: #99a27b;
+  width: 100%;
+}
+.homeContainer .description {
+  width: 50%;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+.homeContainer .description a {
+  color: #9c5026;
+  text-decoration: none;
+  font-family: abril-fatface, serif;
+}
+.homeContainer .description a:hover {
+  color: black;
+}
+
+.projectPage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  background-color: #bf7616;
+  width: 100%;
+}
+.projectPage .projectPageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  background-color: #ede5d7;
+  width: 70%;
+  margin: 40px 0;
+}
+.projectPage .projectsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+.projectPage .projectsContainer .singleProjectContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0;
+}
+.projectPage .projectsContainer .singleProjectContainer img {
+  width: 250px;
+}
+
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  background-color: #9c5026;
+  height: 100%;
+  width: 100%;
+}
+.aboutContainer .textContainer {
+  width: 70%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.aboutContainer .textContainer .newsPaper {
+  font-family: abril-fatface, serif;
+  font-size: 22px;
+  display: inline;
+}
+.aboutContainer .textContainer .skillsContainer {
+  width: 80%;
+  display: flex;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.aboutContainer .textContainer .skillsContainer p {
+  padding: 0 5px;
+  margin: 0;
 }
 
 main {
@@ -112,93 +230,49 @@ main {
   align-items: center;
   gap: 0;
   width: 100%;
-  font-family: "Futura Std Book", sans-serif;
+  font-family: futura-pt, sans-serif;
+  width: 100%;
 }
-
-.categoryContainerOm {
-  padding-bottom: 80px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 0px;
-  z-index: 1;
+main .title {
   font-family: abril-fatface, serif;
-  letter-spacing: 2px;
-  font-size: 30pt;
-  background-color: #ede5d7;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 50vh;
-  z-index: 0;
-}
-.categoryContainerOm h3 {
-  padding: 0;
-  margin: 30px 0 0 0;
-}
-
-.green {
-  position: absolute;
-  top: 97vh;
-}
-@media (min-width: 650px) {
-  .green {
-    top: 67vh;
-  }
-}
-.green p {
-  font-family: "Futura Std Book", sans-serif;
-  font-size: 20pt;
+  font-size: 46px;
   text-align: center;
-  line-height: 40px;
-  padding: 0 30px;
 }
 
-.green {
-  display: flex;
-  background-color: #99a27b;
-  width: 100%;
-  height: 105vh;
-  z-index: 0;
-  top: 160vh;
-}
-@media (min-width: 650px) {
-  .green {
-    display: flex;
-    background-color: #99a27b;
-    width: 100%;
-    height: 60vh;
-    z-index: 0;
-  }
-}
-@media (min-width: 650px) and (min-width: 992px) {
-  .green {
-    display: flex;
-    background-color: #99a27b;
-    width: 100%;
-    height: 60vh;
-    z-index: 0;
-  }
-}
-
-.menu {
-  list-style: none;
-  color: #9c5026;
-  font-family: "Futura Std Book", sans-serif;
+.imgContainer {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 0;
+  margin: 35px 0;
 }
-.menu a {
-  color: #9c5026;
-  padding: 10px 10px;
+.imgContainer img {
+  width: 300px;
+}
+.imgContainer div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  font-family: abril-fatface, serif;
+}
+.imgContainer a {
   text-decoration: none;
+  color: black;
 }
-.menu a:hover {
+.imgContainer a:hover {
   color: #bf7616;
+}
+
+.notFound {
+  background-color: #9c5026;
+  width: 100%;
+  text-align: center;
+  font-family: futura-pt, sans-serif;
+  font-size: 30px;
+  margin: 20px 0;
 }
 
 html {

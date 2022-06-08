@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { projectsArray } from "../../data/projects";
+// import { projectsArray } from "../../data/projects";
 
-export const Project = () => {
+export const SingleProject = () => {
   let params = useParams();
 
   useEffect(() => {
