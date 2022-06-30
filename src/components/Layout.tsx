@@ -20,38 +20,6 @@ export const Layout = () => {
             <img className='smalllogo' src={smalllogo} alt='Logo' />
           </Link>
         </div>
-
-        <nav>
-          <NavLink
-            className={({ isActive }) =>
-              ["menuItem", isActive ? "active" : null].filter(Boolean).join(" ")
-            }
-            end
-            to='/'
-          >
-            Home
-          </NavLink>
-
-          <NavLink
-            className={({ isActive }) =>
-              ["menuItem", isActive ? "active" : null].filter(Boolean).join(" ")
-            }
-            end
-            to='/projects'
-          >
-            Projects
-          </NavLink>
-
-          <NavLink
-            className={({ isActive }) =>
-              ["menuItem", isActive ? "active" : null].filter(Boolean).join(" ")
-            }
-            end
-            to='/about'
-          >
-            About
-          </NavLink>
-        </nav>
       </header>
       <motion.main
         variants={animations}

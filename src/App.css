@@ -245,7 +245,7 @@ main .title {
   justify-content: center;
   align-items: center;
   gap: 0;
-  margin: 35px 0;
+  margin-top: 10px;
 }
 .imgContainer img {
   width: 300px;
@@ -263,7 +263,7 @@ main .title {
   color: black;
 }
 .imgContainer a:hover {
-  color: #bf7616;
+  color: #9c5026;
 }
 
 .notFound {

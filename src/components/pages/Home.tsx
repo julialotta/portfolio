@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 import { FadeInWhenVisible } from "../../animations/FadeInWhenVisible";
+import { StyledH3 } from "../StyledComponents/Headings";
 
 export const Home = () => {
   const title = "Hi, I'm Julia-Lotta Tinglöf";
@@ -39,6 +39,12 @@ export const Home = () => {
           );
         })}
       </motion.h3>
+
+      <StyledH3>
+        This portfolio isn't really done yet, but I'm working on it. Meanwhile,
+        check out my <a href='https://github.com/julialotta'>GitHub</a>.
+      </StyledH3>
+
       <div className='imgContainer'>
         <div>
           <FadeInWhenVisible>
@@ -63,16 +69,13 @@ export const Home = () => {
 
       <p className='description'>
         <FadeInWhenVisible>
-          Hej, Hello & Salut! <br />
           I'm an aspiring Front End Developer currently studying at
           Medieinstitutet in Stockholm, Sweden. <br />
           Prior to my studies I worked as a marketing & project manager at the
-          music company Jubel. Along with my studies I'm consulting for Academic
-          Work, developing a fun game app in React Native for a client of
-          theirs. <br />
+          music company Jubel.
           <br />
-          Check out some of my <Link to='/projects'> projects</Link> and read
-          more <Link to='/about'>about me</Link>.
+          Along with my studies I'm consulting for Academic Work, developing a
+          fun game app in React Native for a client of theirs. <br />
         </FadeInWhenVisible>
       </p>
     </div>
