@@ -1,41 +1,81 @@
-main {
-  @include mixins.flex(column, center, center, 0);
-  width: 100%;
-  font-family: $futura;
-  width: 100%;
+.appContainer {
+  background-image: url(assets/Desktop.png);
+  background-size: cover;
+  background-attachment: fixed;
 
-  .title {
-    font-family: $abril;
-    font-size: 46px;
-    text-align: center;
-  }
-}
-
-.imgContainer {
-  @include mixins.flex(row, center, center, 0);
-  margin-top: 10px;
-  img {
-    width: 300px;
-  }
-  div {
-    @include mixins.flex(column, center, center, 0);
-    font-family: $abril;
-  }
-  a {
-    text-decoration: none;
+  @mixin for-phone-landscape-up {
     color: black;
   }
-  a:hover {
-    color: $red;
+  padding: 80px 0;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  margin: 0 60px 50px 60px;
+  padding: 10px 0;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 3px;
+  h1 {
+    font-family: $C;
+    font-size: 30pt;
+    margin: 10px;
+
+    @include for-phone-landscape-up {
+      font-size: 40pt;
+    }
+    @include for-tablet-landscape-up {
+      font-size: 45pt;
+    }
+  }
+  img {
+    width: 60px;
+    margin-bottom: -15px;
+    @include for-tablet-landscape-up {
+      width: 80px;
+    }
   }
 }
 
-.notFound {
-  background-color: $red;
+main {
   width: 100%;
-  text-align: center;
-  font-family: $futura;
-  font-size: 30px;
+  display: flex;
+  justify-content: center;
 
-  margin: 20px 0;
+  .homeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    padding: 30px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 3px;
+    background-color: white;
+
+    div {
+      margin: 30px;
+    }
+    img {
+      width: 300px;
+      border-radius: 3px;
+    }
+    h3 {
+      margin: 0;
+    }
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-family: $C;
+}
+
+h4,
+h5,
+p {
+  font-family: $S;
 }
