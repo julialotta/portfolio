@@ -6,7 +6,7 @@ import {
   BsFillArrowRightCircleFill,
 } from "react-icons/bs";
 import bird from "../../assets/bird.png";
-import background from "../../assets/bird.png";
+import background from "../../assets/Desktop.png";
 
 export const Anette = () => {
   const [currentImg, setCurrentImg] = useState(0);
@@ -28,9 +28,10 @@ export const Anette = () => {
     <div
       className='appContainer'
       style={{
-        backgroundImage: `url(${background})`,
         backgroundSize: "cover",
         backgroundAttachment: "fixed",
+        backgroundImage: `url(${background})`,
+        backgroundRepeat: "no-repeat",
         padding: "80px 0",
       }}
     >

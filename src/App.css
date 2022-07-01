@@ -277,11 +277,6 @@ main .title {
   margin: 20px 0;
 }
 
-.appContainer {
-  background-size: cover;
-  background-attachment: fixed;
-  padding: 80px 0;
-}
 .appContainer header {
   display: flex;
   flex-direction: column;
