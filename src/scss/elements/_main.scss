@@ -27,7 +27,7 @@ header {
       font-size: 45pt;
     }
   }
-  img {
+  .bird {
     width: 60px;
     margin-bottom: -15px;
     @include for-tablet-landscape-up {
@@ -54,15 +54,16 @@ main {
     div {
       margin: 10px;
     }
-    img {
-      width: 200px;
+    .img {
+      width: 250px;
       border-radius: 3px;
-      @mixin for-phone-landscape-up {
-        width: 300px;
+      @include for-tablet-landscape-up {
+        width: 400px;
       }
     }
     h3 {
-      margin: 0;
+      margin: 0px;
+      font-size: 16pt;
     }
   }
 }
@@ -74,7 +75,10 @@ h3 {
 }
 
 h4,
-h5,
+h5 {
+  font-size: 800;
+  font-family: $S;
+}
 p {
   font-family: $S;
 }
@@ -83,15 +87,15 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
 
   img {
-    margin-top: 40px;
     height: 280px;
+    margin-top: 40px;
     object-fit: cover;
     border-radius: 3px;
     @include for-phone-landscape-up {
-      height: 550px;
+      object-fit: cover;
+      height: 500px;
     }
   }
 

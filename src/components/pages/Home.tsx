@@ -26,16 +26,16 @@ export const Home = () => {
   return (
     <main>
       <div className='homeContainer'>
-        <img src={anette} alt='' />
+        <img className='img' src={anette} alt='' />
         <h3>Anette Hammargren Wiberg</h3>
         <h3>1958 - 2022</h3>
         <div>
           <div>
-            <h4>Fållan, 2022-06-29 </h4>
-            Kära Vänner,
+            <h4>Fållan, 2022-06-29</h4>
             <br />
-            Mina tankar
-            <br />
+
+            <h4>Kära Vänner,</h4>
+            <h4>Mina tankar</h4>
             <br />
             <p>
               Anette Hammargren Wiberg, mitt livs kärlek, min bästis, min hustru

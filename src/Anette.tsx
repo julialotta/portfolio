@@ -5,13 +5,13 @@ import { Layout } from "./components/Layout";
 
 import { AnimatePresence } from "framer-motion";
 
-function App() {
+function Anette() {
   const location = useLocation();
 
   return (
     <AnimatePresence initial={false} exitBeforeEnter>
       <Routes key={location.pathname} location={location.pathname}>
-        <Route path='/' element={<Layout />}>
+        <Route path='/anette' element={<Layout />}>
           <Route index element={<Home />}></Route>
           <Route path='*' element={<NotFound />}></Route>
         </Route>
@@ -20,4 +20,4 @@ function App() {
   );
 }
 
-export default App;
+export default Anette;
