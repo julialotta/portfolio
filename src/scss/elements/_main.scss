@@ -2,10 +2,6 @@
   background-image: url(assets/Desktop.png);
   background-size: cover;
   background-attachment: fixed;
-
-  @mixin for-phone-landscape-up {
-    color: black;
-  }
   padding: 80px 0;
 }
 header {
@@ -56,11 +52,14 @@ main {
     background-color: white;
 
     div {
-      margin: 30px;
+      margin: 10px;
     }
     img {
-      width: 300px;
+      width: 200px;
       border-radius: 3px;
+      @mixin for-phone-landscape-up {
+        width: 300px;
+      }
     }
     h3 {
       margin: 0;
@@ -78,4 +77,34 @@ h4,
 h5,
 p {
   font-family: $S;
+}
+
+.imgContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  img {
+    margin-top: 40px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 3px;
+    @include for-phone-landscape-up {
+      height: 550px;
+    }
+  }
+
+  div {
+    .arrow {
+      color: grey;
+      opacity: 70%;
+      padding: 10px;
+      font-size: 30pt;
+      :hover {
+        cursor: pointer;
+        color: rgb(91, 90, 90);
+      }
+    }
+  }
 }

@@ -1,7 +1,28 @@
 import blommaett from "../../assets/blommaett.png";
 import anette from "../../assets/anette/nettan.png";
+import { images } from "../../assets/anette/anetteimg";
+import { useState } from "react";
+import {
+  BsFillArrowLeftCircleFill,
+  BsFillArrowRightCircleFill,
+} from "react-icons/bs";
 
 export const Home = () => {
+  const [currentImg, setCurrentImg] = useState(0);
+  let imglength = images.length;
+
+  const prevImg = () => {
+    setCurrentImg(currentImg - 1);
+    if (currentImg == 0) {
+      setCurrentImg(imglength - 1);
+    }
+  };
+  const nextImg = () => {
+    setCurrentImg(currentImg + 1);
+    if (currentImg == imglength - 1) {
+      setCurrentImg(0);
+    }
+  };
   return (
     <main>
       <div className='homeContainer'>
@@ -45,7 +66,9 @@ export const Home = () => {
               okända resan.
               <br />
               <br />
-              <h4>Anettes tankar och önskemål</h4>
+            </p>
+            <h4>Anettes tankar och önskemål</h4>
+            <p>
               Under den svåra sista tiden skrev Anette ned sina tankar i
               allmänhet och även önskemål om sin begravning. Det är något vi
               alla ska göra för att underlätta för efterlevande, och för oss är
@@ -94,7 +117,9 @@ export const Home = () => {
               viktigare.
               <br />
               <br />
-              <h4>Avslutningsord</h4>
+            </p>
+            <h4>Avslutningsord</h4>
+            <p>
               Ja, kanske ett lite annorlunda och ovanligt sätt informera om
               Anettes begravning. Skulle jag ha sagt det här på minnesstunden?
               Det är möjligt, men jag har dock insett att varje gång jag pratar
@@ -108,6 +133,19 @@ export const Home = () => {
               <br />
               Amanda, Malin, Johanna och Janne
             </p>
+            <div className='imgContainer'>
+              <img src={images[currentImg].image} alt='Anette' />
+              <div>
+                <BsFillArrowLeftCircleFill
+                  className='arrow'
+                  onClick={prevImg}
+                />
+                <BsFillArrowRightCircleFill
+                  className='arrow'
+                  onClick={nextImg}
+                />
+              </div>
+            </div>
             <h4>Praktisk information om begravningen</h4>
             <p>
               14 juli 2022, kl 12.15 <br />
@@ -118,7 +156,9 @@ export const Home = () => {
               OSA 7 juli <br />
               Ange hur många ni blir och ev önskemål avseende speciell kost
               <br />
-              Mejla wibjan@gmail.com eller SMS till 070-666 26 31 <br />
+              Mejla <a href='mailto:wibjan@gmail.com'></a> eller SMS till
+              070-666 26 31 <br />
+              <br />
               Vill ni hålla tal så passar det bäst under minnesstunden
               <br />
               <a href=' https://brostcancerforbundet.se/stod-oss/minnesgava/'>
