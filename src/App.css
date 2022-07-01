@@ -1,5 +1,7 @@
 @import url("https://use.typekit.net/elq2whh.css");
+@import url("https://fonts.googleapis.com/css2?family=Gwendolyn&family=Playfair+Display:wght@400;800&display=swap");
 @import url("https://use.typekit.net/elq2whh.css");
+@import url("https://fonts.googleapis.com/css2?family=Gwendolyn&family=Playfair+Display:wght@400;800&display=swap");
 .headerContainer {
   width: 100%;
   margin: 30px 10px;
@@ -273,6 +275,123 @@ main .title {
   font-family: futura-pt, sans-serif;
   font-size: 30px;
   margin: 20px 0;
+}
+
+.appContainer {
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 80px 0;
+}
+.appContainer header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  margin: 0 60px 50px 60px;
+  padding: 10px 0;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 3px;
+}
+.appContainer header h1 {
+  font-family: "Gwendolyn", cursive;
+  font-size: 30pt;
+  margin: 10px;
+}
+@media (min-width: 650px) {
+  .appContainer header h1 {
+    font-size: 40pt;
+  }
+}
+@media (min-width: 768px) {
+  .appContainer header h1 {
+    font-size: 45pt;
+  }
+}
+.appContainer header .bird {
+  width: 60px;
+  margin-bottom: -15px;
+}
+@media (min-width: 768px) {
+  .appContainer header .bird {
+    width: 80px;
+  }
+}
+.appContainer main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.appContainer main .homeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  padding: 30px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 3px;
+  background-color: white;
+}
+.appContainer main .homeContainer div {
+  margin: 10px;
+}
+.appContainer main .homeContainer .img {
+  width: 250px;
+  border-radius: 3px;
+}
+@media (min-width: 768px) {
+  .appContainer main .homeContainer .img {
+    width: 400px;
+  }
+}
+.appContainer main .homeContainer h3 {
+  margin: 0px;
+  font-size: 16pt;
+}
+.appContainer h1,
+.appContainer h2,
+.appContainer h3 {
+  font-family: "Gwendolyn", cursive;
+}
+.appContainer h4,
+.appContainer h5 {
+  font-size: 800;
+  font-family: "Playfair Display", serif;
+}
+.appContainer p {
+  font-family: "Playfair Display", serif;
+}
+.appContainer .imgContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.appContainer .imgContainer img {
+  height: 280px;
+  margin-top: 40px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+@media (min-width: 650px) {
+  .appContainer .imgContainer img {
+    object-fit: cover;
+    height: 500px;
+  }
+}
+.appContainer .imgContainer .arrows {
+  display: flex;
+  flex-direction: row;
+}
+.appContainer .imgContainer .arrows .arrow {
+  color: grey;
+  opacity: 70%;
+  padding: 10px;
+  font-size: 30pt;
+}
+.appContainer .imgContainer .arrows .arrow :hover {
+  cursor: pointer;
+  color: #5b5a5a;
 }
 
 html {

@@ -1,6 +1,5 @@
-import { Link, NavLink, Outlet } from "react-router-dom";
-import smalllogo from "../assets/smalllogo.png";
-import logo from "../assets/logo.png";
+import { Outlet } from "react-router-dom";
+
 import "../scss/main.scss";
 import Footer from "./partials/Footer";
 import { motion } from "framer-motion";
@@ -13,14 +12,6 @@ export const Layout = () => {
   };
   return (
     <>
-      <header className='headerContainer'>
-        <div className='logoContainer'>
-          <Link to='/'>
-            <img className='logo' src={logo} alt='Logo' />
-            <img className='smalllogo' src={smalllogo} alt='Logo' />
-          </Link>
-        </div>
-      </header>
       <motion.main
         variants={animations}
         initial='initial'
@@ -30,7 +21,6 @@ export const Layout = () => {
       >
         <Outlet />
       </motion.main>
-      <Footer />
     </>
   );
 };
