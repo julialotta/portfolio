@@ -49,6 +49,13 @@ main {
   display: flex;
   justify-content: center;
 }
+main a {
+  color: #e67e7f;
+  text-decoration: none;
+}
+main a:hover {
+  color: orange;
+}
 main .homeContainer {
   display: flex;
   flex-direction: column;

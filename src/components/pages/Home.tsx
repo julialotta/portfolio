@@ -163,8 +163,10 @@ export const Home = () => {
                 OSA 7 juli <br />
                 Ange hur många ni blir och ev önskemål avseende speciell kost
                 <br />
-                Mejla <a href='mailto:wibjan@gmail.com'></a> eller SMS till
-                070-666 26 31 <br />
+                Mejla <a href='mailto:wibjan@gmail.com'>
+                  wibjan@gmail.com
+                </a>{" "}
+                eller SMS till 070-666 26 31 <br />
                 <br />
                 Vill ni hålla tal så passar det bäst under minnesstunden
                 <br />
