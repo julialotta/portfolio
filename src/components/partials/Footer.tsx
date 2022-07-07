@@ -7,7 +7,7 @@ function Footer() {
     <FadeInWhenVisible>
       <footer
         style={{
-          backgroundImage: `src('cv/JL.png')`,
+          backgroundImage: `src('cvimg/JL.png')`,
         }}
       >
         <div>

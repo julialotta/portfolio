@@ -66,7 +66,7 @@ export const Home = () => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
-                src='cv/JL.png'
+                src='cvimg/JL.png'
                 alt='placeholder'
               />
             </FadeInWhenVisible>
